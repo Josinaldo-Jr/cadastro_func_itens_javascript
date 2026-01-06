@@ -1,13 +1,14 @@
-# Cadastro de Funcionários e Itens
+# Cadastro de Funcionários e Itens (JavaScript)
 
-Projeto Java com interface gráfica usando JavaFX.
+Projeto em JavaScript para estudo em grupo, focado em organização, Git e boas práticas.
 
 ## Tecnologias
-- Java 21 (LTS)
-- JavaFX
-- Maven
+- JavaScript (Node.js)
 - VS Code
+- Git
 
-## Como executar
-```bash
-mvn javafx:run
+## Requisitos
+- Node.js LTS
+
+## Objetivo
+Criar um sistema simples de cadastro de funcionários e itens.

@@ -1,0 +1,23 @@
+tela de login
+
+//**********////
+
+tela de cadastro(forms)
+
+nome:
+cpf:
+email:
+funcao:
+salario(bruto-liquido):
+
+(botoes)
+adicionar
+remover
+vizualizar
+
+//*********///
+tela listar funcionarios
+
+
+
+
