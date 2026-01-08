@@ -5,8 +5,8 @@ tela de login
 tela de cadastro(forms)
 
 nome:
-cpf:
-email:
+cpf(incrementar auto formatação):
+email(incrementar auto formatação):
 funcao:
 salario(bruto-liquido):
 
@@ -17,6 +17,10 @@ vizualizar
 
 //*********///
 tela listar funcionarios
+
+//*****//
+filtros de pesquisa
+baixar em arquivos
 
 
 
