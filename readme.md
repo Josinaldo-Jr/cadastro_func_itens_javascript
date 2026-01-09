@@ -12,5 +12,3 @@ Projeto em JavaScript para estudo em grupo, focado em organização, Git e boas 
 
 ## Objetivo
 Criar um sistema simples de cadastro de funcionários e itens.
-
-## Teste

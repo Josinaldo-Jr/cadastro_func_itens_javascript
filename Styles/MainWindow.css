@@ -5,42 +5,36 @@
   padding: 0;
   font-family: 'Roboto', sans-serif;
 }
-
 body {
-  background-image: url("");
+  background-image: url("/Images/pexels-fauxels-3184430.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-attachment: fixed
-  
+  background-attachment: fixed;
+  background-position: center center;
 }
-
 .container {
   display: flex;
   justify-content: center;
   width: 100%;
   margin-top: 100px;
 }
-
 .card {
   background-color: #ffffff80;
   padding: 30px;
   border-radius: 4%;
-  box-shadow: 3px 3px 1px 0px #00000060;
-  width: 400px;
+  box-shadow: 3px 3px 1px 0px #00000060
 }
-
 h1{
   text-align: center;
   margin-bottom: 20px;
-  color: #4e148c
+  color: #272262
 }
-
 .label-float input{
   width: 100%;
   padding: 5px 5px;
   display: inline-block;
   border: 0;
-  border-bottom: 2px solid #4e148c;
+  border-bottom: 2px solid #272262;
   background-color: transparent;
   outline: none;
   min-width: 180px;
@@ -49,20 +43,17 @@ h1{
   border-radius: 0;
   
 }
-
 .label-float{
   position: relative;
   padding-top: 13px;
   margin-top: 5%;
   margin-bottom: 5%;
 }
-
 .label-float input:focus{
-  border-bottom: 2px solid #613dc1;
+  border-bottom: 2px solid #4038a0;
 }
-
 .label-float label{
-  color: #4e148c;
+  color: #272262;
   pointer-events: none;
   position: absolute;
   top: 0;
@@ -70,18 +61,16 @@ h1{
   margin-top: 13px;
   transition: all .3s ease-out;
 }
-
 .label-float input:focus + label,
 .label-float input:valid + label{
   font-size: 13px;
   margin-top: 0;
-  color: #613dc1
+  color: #4038a0
 }
-
 button{
   background-color: transparent;
-  border-color: #4e148c;
-  color: #4e148c;
+  border-color: #272262;
+  color: #272262;
   padding: 7px;
   font-weight: bold;
   font-size: 12pt;
@@ -91,9 +80,8 @@ button{
   outline: none;
   transition: all .4s ease-out;
 }
-
 button:hover{
-  background-color: #2c0735;
+  background-color: #272262;
   color: #fff;
 }
 
@@ -101,28 +89,40 @@ button:hover{
   display: flex;
   justify-content: center;
 }
+hr{
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+}
 
+p{
+  color: #272262;
+  font-size: 14pt;
+  text-align: center;
+}
+
+a{
+  color: #7a3077;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .3s ease-out;
+}
+
+a:hover{
+  color: #272262;
+}
 .fa-eye{
   position: absolute;
   top: 15px;
   right: 10px;
   cursor: pointer;
-  color: #4e148c;
+  color: #272262;
 }
 
-#msgError{
+ #msgError{
   text-align: center;
   color: #ff0000;
   background-color: #ffbbbb;
-  padding: 10px;
-  border-radius: 4px;
-  display: none;
-}
-
-#msgSuccess{
-  text-align: center;
-  color: #00bb00;
-  background-color: #bbffbe;
   padding: 10px;
   border-radius: 4px;
   display: none;
