@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel = "stylesheet" href = "./Styles/MainWindow.css">
+        <link rel = "stylesheet" href = "../Styles/MainWindow.css">
     </head>
     <body>
         <div class="container">
@@ -16,7 +16,14 @@
             </div>
             
             <div class="label-float">
-                <input type = "number" id = "cpf" name = "cpf" placeholder="000.000.000-00" required>
+                <input 
+                    type = "text" 
+                    id = "cpf" 
+                    maxlength ="14" 
+                    inputmode = "numeric"
+                    name = "cpf" 
+                    placeholder="000.000.000-00" 
+                    required>
                 <label id="userlabel" for = "cpf"> CPF: </label>
             </div>
 
@@ -28,13 +35,13 @@
 
             <div class="label-float">
                 <input type = "text" id = "funcao" name = "funcao" placeholder="digite a função" required>
-                <label id = "userLabel" for = "função"> Função: </label>
+                <label id = "userLabel" for = "funcao"> Função: </label>
             </div>
            
             <div class="label-float">                
-                <input type = "number" id = "salario" name = "salario" placeholder="digite o salario liquido" required>
+                <input type = "number" id = "salario_liquido" name = "salario" placeholder="digite o salario liquido" required>
                 <label id = "userlabel" for = "salario"> Salário: </label>
-                <input type = "number" id = "salario" name = "salario" placeholder="digite o salario bruto" required>
+                <input type = "number" id = "salario_bruto" name = "salario" placeholder="digite o salario bruto" required>
                 
             </div>
 
@@ -46,13 +53,10 @@
             <p><a href="signin.html">
             Entre
           </a></p>
-            </form>
-        </div>
-
-
+        
         </form>
 
         
-    <script src="/Script/MainWindow.js"></script>
+    <script src="../Script/MainWindow.js"></script>
     </body>
 </html>
