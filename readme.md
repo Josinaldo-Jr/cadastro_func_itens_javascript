@@ -96,4 +96,3 @@ style: ajusta layout da tabela de funcionários
 docs: atualiza instruções do README
 
 refactor: reorganiza funções de cadastro
-
