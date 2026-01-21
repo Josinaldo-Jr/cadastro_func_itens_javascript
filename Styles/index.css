@@ -159,7 +159,7 @@
   color: #4038a0
 }
 
-button {
+.enviar {
   background-color: transparent;
   border-color: #272262;
   color: #272262;
@@ -173,7 +173,7 @@ button {
   transition: all .4s ease-out;
 }
 
-button:hover {
+.enviar:hover {
   background-color: #272262;
   color: #fff;
 }
@@ -181,7 +181,6 @@ button:hover {
 .justify-center {
   display: flex;
   justify-content: center;
-  gap: 3px;
 }
 
 p {

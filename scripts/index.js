@@ -1,81 +1,80 @@
-const singIn = "../pages/signin.html";
-const sairBtn = document.querySelector(".clique_sair");
+
+const singIn = "../pages/signin.html"
+const sairBtn = window.document.querySelector(".clique_sair")
 const userLogado = JSON.parse(localStorage.getItem("userLogado"));
 
 if (!localStorage.getItem("token")) {
-  window.location.href = singIn;
+  // alert() <!-- descomentar esta linha para verificação --> 
+  window.location.href = singIn; // Redirecionamento direto para a página de login caso não haja "token"
 }
 
-if (sairBtn) {
-  sairBtn.addEventListener("click", () => {
-    localStorage.removeItem("token");
-    localStorage.removeItem("userLogado");
-    window.location.href = singIn;
-  });
-}
+sairBtn.addEventListener('click', (e) => {
+  localStorage.removeItem("token");
+  localStorage.removeItem("userLogado");
+  window.location.href = singIn;
+})
 
 const logado = document.querySelector("#logado");
-if (logado) {
-  logado.innerHTML = `Olá, ${userLogado?.nome || "usuário"}!`;
-}
+logado.innerHTML = `Olá, ${userLogado.nome}!`;
 
-// ===== Funcionários =====
-const employeeStorageKey = "employees";
+let btn = document.querySelector('.fa-eye')
 
-function getEmployees() {
-  return JSON.parse(localStorage.getItem(employeeStorageKey)) || [];
-}
+btn.addEventListener('click', ()=>{
+  let inputSenha = document.querySelector('#senha')
+  
+  if(inputSenha.getAttribute('type') == 'password'){
+    inputSenha.setAttribute('type', 'text')
+  } else {
+    inputSenha.setAttribute('type', 'password')
+  }
+})
 
-function setEmployees(list) {
-  localStorage.setItem(employeeStorageKey, JSON.stringify(list));
-}
-
-function createEmployeeId() {
-  return crypto.randomUUID ? crypto.randomUUID() : String(Date.now());
-}
-
-const form = document.querySelector("form.formulario");
-
-if (form) {
-  form.addEventListener("submit", (e) => {
-    e.preventDefault();
-
-    const nameInput = document.querySelector("#Nome");
-    const cpfInput = document.querySelector("#cpf");
-    const emailInput = document.querySelector("#email");
-    const roleInput = document.querySelector("#funcao");
-
-    const salaryInputs = document.querySelectorAll('input[name="salario"]');
-    const netSalaryInput = salaryInputs[0];
-    const grossSalaryInput = salaryInputs[1];
-
-    const employee = {
-      id: createEmployeeId(),
-      name: nameInput ? nameInput.value.trim() : "",
-      cpf: cpfInput ? cpfInput.value.trim() : "",
-      email: emailInput ? emailInput.value.trim() : "",
-      role: roleInput ? roleInput.value.trim() : "",
-      netSalary: netSalaryInput ? netSalaryInput.value.trim() : "",
-      grossSalary: grossSalaryInput ? grossSalaryInput.value.trim() : "",
-      createdAt: new Date().toISOString(),
-    };
-
-    if (!employee.name || !employee.cpf || !employee.email || !employee.role) {
-      alert("Preencha todos os campos obrigatórios.");
-      return;
+function entrar(){
+  let usuario = document.querySelector('#usuario')
+  let userLabel = document.querySelector('#userLabel')
+  
+  let senha = document.querySelector('#senha')
+  let senhaLabel = document.querySelector('#senhaLabel')
+  
+  let msgError = document.querySelector('#msgError')
+  let listaUser = []
+  
+  let userValid = {
+    nome: '',
+    user: '',
+    senha: ''
+  }
+  
+  listaUser = JSON.parse(localStorage.getItem('listaUser'))
+  
+  listaUser.forEach((item) => {
+    if(usuario.value == item.userCad && senha.value == item.senhaCad){
+       
+      userValid = {
+         nome: item.nomeCad,
+         user: item.userCad,
+         senha: item.senhaCad
+       }
+      
     }
-
-    const employees = getEmployees();
-    employees.push(employee);
-    setEmployees(employees);
-
-    form.reset();
-
-    alert("Funcionário cadastrado com sucesso!");
-
-  });
-}
-
-function goToList() {
-  window.location.href = "../pages/list.html";
+  })
+   
+  if(usuario.value == userValid.user && senha.value == userValid.senha){
+    window.location.href = '../../index.html'
+    
+    let mathRandom = Math.random().toString(16).substr(2)
+    let token = mathRandom + mathRandom
+    
+    localStorage.setItem('token', token)
+    localStorage.setItem('userLogado', JSON.stringify(userValid))
+  } else {
+    userLabel.setAttribute('style', 'color: red')
+    usuario.setAttribute('style', 'border-color: red')
+    senhaLabel.setAttribute('style', 'color: red')
+    senha.setAttribute('style', 'border-color: red')
+    msgError.setAttribute('style', 'display: block')
+    msgError.innerHTML = 'Usuário ou senha incorretos'
+    usuario.focus()
+  }
+  
 }
