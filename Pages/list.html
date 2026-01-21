@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Página de lista de funcionários" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="../styles/list.css" />
+  <title>Cadastro de Funcionários</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="card">
+      <h1>Lista de Funcionários</h1>
+
+      <div class="justify-center">
+        <button onclick="goToRegister()">Adicionar</button>
+      </div>
+
+      <div class="justify-center">
+        <hr />
+      </div>
+
+      <div class="header-info">
+        <table>
+          <thead>
+            <tr>
+              <th>Nome</th>
+              <th>CPF</th>
+              <th>Email</th>
+              <th>Função</th>
+              <th>Salário</th>
+              <th class="acao">Editar</th>
+              <th class="acao">Excluir</th>
+            </tr>
+          </thead>
+          <tbody id="employeesTbody"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <script src="../scripts/list.js" defer></script>
+</body>
+</html>
