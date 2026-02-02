@@ -15,11 +15,16 @@ Criar um sistema de cadastro de funcionários, permitindo ao grupo aplicar, na p
 - Lógica de programação com JavaScript
 - Controle de versão com Git
 - Colaboração em equipe com GitHub (branches, commits e Pull Requests)
+---
+
+## 📱 Protótipo - Wireframe
+[Mobile link](https://www.figma.com/proto/gEnNlYb69KHQiXSbJGA93K/Desafio-DevSquad?node-id=1-3&p=f&t=sxKqGkt4CG5q5Czm-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3)
+
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
-
+- **Figma**
 - **HTML5**
 - **CSS3**
 - **JavaScript**
