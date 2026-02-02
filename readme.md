@@ -43,7 +43,7 @@ Ela deve ser seguida por todos os integrantes para manter consistência na inter
 
 ### 🔤 Tipografia
 
-- **Fonte principal:** *(a definir)*
+- **Fonte principal:** `Roboto`
 - **Fonte alternativa (fallback):** `sans-serif`
 
 **Uso recomendado:**
@@ -56,12 +56,12 @@ Ela deve ser seguida por todos os integrantes para manter consistência na inter
 
 | Uso | Descrição | Cor (Hex) |
 |----|----|----|
-| Primária | Cor principal do sistema | `#______` |
-| Secundária | Destaques e ações secundárias | `#______` |
-| Background | Fundo das páginas | `#______` |
-| Texto | Texto principal | `#______` |
-| Sucesso | Ações concluídas | `#______` |
-| Erro | Mensagens de erro | `#______` |
+| Primária | Cor principal do sistema | `#10609c` |
+| Secundária | Destaques e ações secundárias | `#f26b10` |
+| Background | Fundo das páginas | `#eef0ea` |
+| Texto | Texto principal | `#8c8c8c` |
+| Sucesso | Ações concluídas | `#399f1f` |
+| Erro | Mensagens de erro | `#f26b10` |
 
 
 ---
@@ -75,6 +75,39 @@ Para manter o projeto organizado e facilitar o aprendizado em equipe, seguimos u
 git checkout main
 git pull origin main
 git checkout -b feature/nome-da-tarefa
+```
+### Atualizar a branch após o merge
+```bash
+-A main foi atualizada (merge feito)
+
+-O time foi avisado:
+"A funcionalidade X foi mesclada na main. Atualizem suas branches antes de continuar."
+
+-Cada integrante já tem uma branch criada e com trabalho em andamento
+
+1️⃣ Salvar o que já foi feito (obrigatório)
+git status
+
+Se houver arquivos modificados:
+git add .
+git commit -m "chore: salva progresso antes de atualizar main"
+
+2️⃣ Atualizar a branch main local
+git checkout main
+git pull origin main
+
+3️⃣ Voltar para sua branch de trabalho
+git checkout feature/sua-branch
+
+4️⃣ Trazer as atualizações da main para sua branch
+git merge main
+
+
+Se aparecer conflito:
+
+-Resolva os arquivos indicados
+-Salve
+-Faça o commit do merge
 ```
 
 ---
