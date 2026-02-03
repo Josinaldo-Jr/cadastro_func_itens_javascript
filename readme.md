@@ -20,6 +20,8 @@ Criar um sistema de cadastro de funcionários, permitindo ao grupo aplicar, na p
 ## 📱 Protótipo - Wireframe
 [Mobile link](https://www.figma.com/proto/gEnNlYb69KHQiXSbJGA93K/Desafio-DevSquad?node-id=1-3&p=f&t=sxKqGkt4CG5q5Czm-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=1%3A3)
 
+[Desktop link](https://www.figma.com/proto/gEnNlYb69KHQiXSbJGA93K/Desafio-DevSquad?node-id=26-63&t=prIlmZWMzneK0sJr-1&scaling=contain&content-scaling=fixed&page-id=26%3A60&starting-point-node-id=26%3A63)
+
 
 ---
 
