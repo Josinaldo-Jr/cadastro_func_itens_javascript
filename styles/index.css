@@ -5,7 +5,7 @@
   --principal-background-color: #105f9c40;
   --primary-color: #10609c;
   --secondary-color: #f26b10;
-  --shadow-color: rgba(0,0,0,0.3);
+  --shadow-color: rgba(0, 0, 0, 0.3);
   --accent-color: #399f1f;
   --link-color: #0e4d7c;
   --default-color: #eef0ea;
@@ -13,88 +13,88 @@
 }
 
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .corpo {
-    height: 100%;
-    width: 100%;
-    font-family: var(--font-family);
-    background-image: url('../assets/pexels-fauxels-3184430.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center center;
-    color: var(--default-color);
+  height: 100%;
+  width: 100%;
+  font-family: var(--font-family);
+  background-image: url('../assets/pexels-fauxels-3184430.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center center;
+  color: var(--default-color);
 }
 
 .cabecalho {
-    background-color: var(--primary-color);
-    color: var(--default-color);
-    padding: 1rem;
-    display: flex;
+  background-color: var(--primary-color);
+  color: var(--default-color);
+  padding: 1rem;
+  display: flex;
 }
 
 .cabecalho .logo {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: solid .2rem var(--shadow-color);
-    margin-left: auto;
-    cursor: pointer;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: solid .2rem var(--shadow-color);
+  margin-left: auto;
+  cursor: pointer;
 }
 
 .cabecalho .clique_sair {
-    background-color: var(--default-color);
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    padding: 10px 25px;
-    height: 50%;
-    align-self: center;
-    margin: 0 0 0 25px;
-    transition: all .2s ease-out;
+  background-color: var(--default-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  padding: 10px 25px;
+  height: 50%;
+  align-self: center;
+  margin: 0 0 0 25px;
+  transition: all .2s ease-out;
 }
 
 .cabecalho .clique_sair:hover {
-    background-color: var(--secondary-color);
-    transform: scale(1.1);
+  background-color: var(--secondary-color);
+  transform: scale(1.1);
 }
 
 .cabecalho .clique_sair:active {
-    transform: scale(.9);
+  transform: scale(.9);
 }
 
 .cabecalho #logado {
-    border-left: solid 5px var(--default-color);
-    padding: 10px 0 10px 1rem;
-    height: 50%;
-    align-self: center;
-    letter-spacing: 1px;
+  border-left: solid 5px var(--default-color);
+  padding: 10px 0 10px 1rem;
+  height: 50%;
+  align-self: center;
+  letter-spacing: 1px;
 }
 
 .principal {
-    display: flex;
-    padding: 1rem 16rem;
-    align-items: center;
-    justify-content: center;
-    width: 100;
-    margin: auto;
-    background-color: var(--principal-background-color);
-    
+  display: flex;
+  padding: 1rem 16rem;
+  align-items: center;
+  justify-content: center;
+  width: 100;
+  margin: auto;
+  background-color: var(--principal-background-color);
+
 }
 
 .principal .caixa_apresentacao {
-    max-width: 100px;
-    max-height: 100px;
+  max-width: 100px;
+  max-height: 100px;
 }
 
 .rodape {
-    background-color: var(--default-color);
-    text-align: center;
-    padding: 1rem;
+  background-color: var(--default-color);
+  text-align: center;
+  padding: 1rem;
 }
 
 .container {
@@ -189,16 +189,6 @@ p {
   color: var(--primary-color);
   font-size: 14pt;
   text-align: center;
-}
-
-a {
-  font-weight: bold;
-  text-decoration: none;
-  transition: all .3s ease-out;
-}
-
-a:hover {
-  color: #272262;
 }
 
 .fa-eye {

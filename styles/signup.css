@@ -6,7 +6,7 @@
   --principal-background-color: #105f9c40;
   --primary-color: #10609c;
   --secondary-color: #f26b10;
-  --shadow-color: rgba(0,0,0,0.3);
+  --shadow-color: rgba(0, 0, 0, 0.3);
   --accent-color: #399f1f;
   --link-color: #0e4d7c;
   --default-color: #eef0ea;
@@ -43,13 +43,13 @@ body {
   width: 400px;
 }
 
-h1{
+h1 {
   text-align: center;
   margin-bottom: 20px;
   color: var(--primary-color);
 }
 
-.label-float input{
+.label-float input {
   width: 100%;
   padding: 5px 5px;
   display: inline-block;
@@ -61,21 +61,20 @@ h1{
   font-size: 16px;
   transition: all .3s ease-out;
   border-radius: 0;
-  
 }
 
-.label-float{
+.label-float {
   position: relative;
   padding-top: 13px;
   margin-top: 5%;
   margin-bottom: 5%;
 }
 
-.label-float input:focus{
+.label-float input:focus {
   border-bottom: 2px solid var(--accent-color);
 }
 
-.label-float label{
+.label-float label {
   color: var(--primary-color);
   pointer-events: none;
   position: absolute;
@@ -85,14 +84,14 @@ h1{
   transition: all .3s ease-out;
 }
 
-.label-float input:focus + label,
-.label-float input:valid + label{
+.label-float input:focus+label,
+.label-float input:valid+label {
   font-size: 13px;
   margin-top: 0;
   color: var(--accent-color);
 }
 
-button{
+button {
   background-color: transparent;
   border-color: var(--primary-color);
   color: var(--primary-color);
@@ -106,17 +105,17 @@ button{
   transition: all .4s ease-out;
 }
 
-button:hover{
+button:hover {
   background-color: var(--primary-color);
   color: var(--default-color);
 }
 
-.justify-center{
+.justify-center {
   display: flex;
   justify-content: center;
 }
 
-.fa-eye{
+.fa-eye {
   position: absolute;
   top: 15px;
   right: 10px;
@@ -124,7 +123,7 @@ button:hover{
   color: var(--primary-color);
 }
 
-#msgError{
+#msgError {
   text-align: center;
   color: var(--default-color);
   background-color: var(--secondary-color);
@@ -133,26 +132,10 @@ button:hover{
   display: none;
 }
 
-#msgSuccess{
+#msgSuccess {
   text-align: center;
   color: var(--default-color);
   background-color: var(--accent-color);
-  padding: 10px;
-  border-radius: 4px;
-  display: none;
-}
-.fa-eye{
-  position: absolute;
-  top: 15px;
-  right: 10px;
-  cursor: pointer;
-  color: var(--primary-color);
-}
-
- #msgError{
-  text-align: center;
-  color: var(--default-color);
-  background-color: var(--secondary-color);
   padding: 10px;
   border-radius: 4px;
   display: none;

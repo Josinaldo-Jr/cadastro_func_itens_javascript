@@ -3,11 +3,11 @@
 
 :root {
   /* Adicionando variáveis */
- 
+
   --card-background-color: #eef0eae8;
   --primary-color: #10609c;
   --secondary-color: #f26b10;
-  --shadow-color: rgba(0,0,0,0.3);
+  --shadow-color: rgba(0, 0, 0, 0.3);
   --accent-color: #399f1f;
   --link-color: #0e4d7c;
   --default-color: #eef0ea;
