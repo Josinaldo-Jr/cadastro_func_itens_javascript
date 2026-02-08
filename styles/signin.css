@@ -167,7 +167,7 @@ a:hover {
 
 @media screen and (max-width: 600px) {
   .rodape p {
-    max-width: 260px; /* ajuste fino se quiser */
+    max-width: 260px; 
     margin: 0 auto;
     text-align: center;
     line-height: 1.4;
