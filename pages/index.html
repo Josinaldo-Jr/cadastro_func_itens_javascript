@@ -38,12 +38,19 @@
         <form class="formulario">
 
           <div class="label-float">
-            <input type="text" id="Nome" required />
-            <label id="userLabel" for="Nome">Nome:</label>
+            <input type="text" id="name" required />
+            <label id="userLabel" for="name">Nome:</label>
           </div>
 
           <div class="label-float">
-            <input type="number" id="cpf" name="cpf" required>
+            <input
+              type="text"
+              id="cpf"
+              name="cpf"
+              maxlength="14"
+              oninput="formatCPF(this)"
+              required
+            >
             <label id="userlabel" for="cpf"> CPF: </label>
           </div>
 
@@ -59,11 +66,11 @@
           </div>
 
           <div class="label-float">
-            <input type="number" id="salario" name="salario" required>
+            <input type="number" id="salario_liquido" name="salario_liquido" required>
             <label id="userlabel" for="salario"> Salário líquido: </label>
           </div>
           <div class="label-float">
-            <input type="number" id="salario" name="salario" required>
+            <input type="number" id="salario_bruto" name="salario_bruto" required>
             <label id="userlabel" for="salario"> Salário bruto: </label>
           </div>
 
