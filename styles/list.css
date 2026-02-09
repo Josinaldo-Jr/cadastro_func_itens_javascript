@@ -104,12 +104,21 @@ tbody tr td.acao {
   text-align: center;
 }
 
+p {
+    color: var(--primary-color);
+    font-size: 14pt;
+    text-align: center;
+}
+
 .rodape {
   background-color: var(--default-color);
   text-align: center;
   padding: 1rem;
+  position: absolute;
+  bottom: 0;
   width: 100%;
 }
+
 
 @media screen and (max-width: 600px) {
 
@@ -127,8 +136,7 @@ tbody tr td.acao {
 
   td button i:first-child {
     margin-right: 0;
-  }
-  
+  }  
 
   .rodape p {
     max-width: 260px;

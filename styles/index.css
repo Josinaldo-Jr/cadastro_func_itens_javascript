@@ -39,6 +39,7 @@
   align-items: center;
   gap: 1rem;
   flex-wrap: wrap;
+  box-shadow: 3px 3px 6px 3px var(--shadow-color);
 }
 
 .cabecalho .logo {
