@@ -45,7 +45,7 @@ function renderTable() {
 }
 
 function goToRegister() {
-  window.location.href = "../pages/index.html";
+  window.location.href = "../index.html";
 }
 
 window.goToRegister = goToRegister;
@@ -72,7 +72,7 @@ document.addEventListener("click", (e) => {
   if (editBtn) {
     const index = editBtn.dataset.index;
     localStorage.setItem("editEmployeeIndex", index);
-    window.location.href = "../pages/index.html";
+    window.location.href = "../index.html";
   }
 });
 
